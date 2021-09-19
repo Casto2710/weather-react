@@ -13,6 +13,13 @@ alert (
     q=${props.city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     return (
-        <h2> Weather App</h2>
+       <h2>Weather App</h2>
     )
-}
+    }
+<small>
+<a
+href="https://github.com/Casto2710/Vanilla-Weather-App"
+terget="blank"
+>open-source code</a>
+by Jolanta Studencka
+</small>
