@@ -13,16 +13,19 @@ function App() {
 
         <WeatherSearch />
       </header>
+   
+
+    <a href="https://github.com/Casto2710/weather-react"
+    terget="blank" alt="repository"
+    
+    >open-source code
+    by Jolanta Studencka
+  
+    </a>
     </div>
   );
 }
-<small>
-<a
-href="https://github.com/Casto2710/Vanilla-Weather-App"
-terget="blank"
->open-source code</a>
-by Jolanta Studencka
-</small>
+
 
 
 export default App;
