@@ -16,7 +16,7 @@ function App() {
    
 
     <a href="https://github.com/Casto2710/weather-react"
-    terget="blank" alt="repository"
+    terget="_blank" alt="repository"
     
     >open-source code
     by Jolanta Studencka
