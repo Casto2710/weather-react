@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+button {
+  background-color:rgb(95, 95, 251);
+
+}
+.weatherSearch {
+  margin-bottom: 60px;
+  font-size: 16px;
+
+}
