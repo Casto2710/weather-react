@@ -1,6 +1,8 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+import WeatherIcon from "./Weathericon";
+import formatedDate from "./FormatedDate";
 
 
 export default function WeatherSearch() {
@@ -11,10 +13,12 @@ export default function WeatherSearch() {
   function displayWeather(response) {
     setLoaded(true);
     setWeather({
+      date: formatedDate(response.data.dt*1000),
+      city:response.data.name,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description
     });
   }
@@ -41,16 +45,17 @@ export default function WeatherSearch() {
     return (
       <div>
         {form}
-        <ul>
-          <li>Temperature: {Math.round(weather.temperature)}°C | °F</li>
-          <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}km/h</li>
-          <li>
-            <img src={weather.icon} alt={weather.description} />
-          </li>
-        </ul>
-      </div>
+        
+          <formatedDate date={weather.date}/>
+          Date:{weather.date.getDay()}
+          Temperature: {Math.round(weather.temperature)}°C | °F
+          Description: {weather.description}
+          Humidity: {weather.humidity}%
+          Wind: {weather.wind}km/h
+          
+        <WeatherIcon code={weather.data.icon} alt={weather.data.description}/>
+        </div>
+     
     );
   } else {
     return form;
