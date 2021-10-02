@@ -29,7 +29,7 @@ export default function WeatherForecast(props) {
                            </div>
                  );
                }
-               })}
+                 })}
            </div>
         </div> 
          );
