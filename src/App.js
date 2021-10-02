@@ -1,7 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-import Weather from './Weather';
-import WeatherInfo from './WeatherInfo';
+import logo from "./logo.svg";
+import "./App.css";
+import Weather from "./Weather";
 
 function App() {
   return (
@@ -11,10 +10,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h2>Weather App</h2>
      <Weather defaultcity ="London"/>
-     
-        <WeatherInfo />
-      </header>
+     </header>
    
+
+
 
     <a href="https://github.com/Casto2710/weather-react"
     terget="_blank" alt="repository"
