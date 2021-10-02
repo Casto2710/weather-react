@@ -1,17 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import Weather from './Weather';
-import WeatherSearch from './WeatherSearch';
+import WeatherInfo from './WeatherInfo';
 
 function App() {
   return (
     <div className="App">
+      <div className="container">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        
-     <Weather city ="London"/>
-
-        <WeatherSearch />
+        <h2>Weather App</h2>
+     <Weather defaultcity ="London"/>
+     
+        <WeatherInfo />
       </header>
    
 
@@ -23,7 +24,7 @@ function App() {
   
     </a>
     </div>
-   
+    </div>
   );
 }
 
